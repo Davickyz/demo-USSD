@@ -1,0 +1,880 @@
+<script>
+    let menu1 = prompt("welcome to USSD banking. dial *324# to proceed.")
+     console.log(typeof(menu1))
+        if (menu1 == "*324#"){
+         let menu2 =  +prompt( `..........................................WELCOME TO SLEEK BANK PLC................................... 
+        select the following options to continue:
+        1. Buy Airtime
+        2. Buy Data
+        3. My balance`)
+        // Airtime.
+            if (menu2 == "1"){
+                let airtime = +prompt(`Select Recipient
+        1. for Myself
+        2. for Others
+               ` )//for myself
+               if (airtime == "1"){
+                let Myself = +prompt ("Input desired amount.")
+                if (Myself <= 0){let Myself0 = +prompt(`The amount inputed is less than N1. Try again
+                    Input desired amount.`)
+                        if (Myself0 <= 0){let Myself1 = +prompt(`The amount inputed is less than N1. Try again
+                    Input desired amount.`)
+                             if (Myself1 <= 0){alert("Time out")
+                            }
+                        else if (Myself1 > 0){
+                            alert(`You have successfully recharged N${Myself1} worth of airtime. Thank you`)
+                        }
+                        }
+                        else if (Myself0 > 0){
+                            alert(`You have successfully recharged N${Myself0} worth of airtime. Thank you`)
+                        }
+                    }
+                else if (Myself <100001){alert(`You have sucessfully recharged N${Myself} worth of airtime. Thank you.`)}
+                    
+                    else if (Myself > 100000) {let Myself3 = +prompt(`The amount inputed is more than N100,000. Try again
+                        Input desired amount.`)
+                        if (Myself3 > 100000) {let Myself4 = +prompt(`The amount inputed is more than N100,000. Try again
+                        Input desired amount.`)
+                            if (Myself4 > 100000){alert("Time out")
+                            }
+                        else if(Myself4 < 100001){
+                            alert(`You have successfully recharged N${Myself4} worth of airtime. Thank you`)
+                        }
+                        }
+                        else if(Myself3 < 100001){
+                            alert(`You have successfully recharged N${Myself3} worth of airtime. Thank you`)
+                        }
+                    }       
+                }// for others
+                if (airtime == "2"){
+                    let phone_number = +prompt("Please input Recipients Number")
+                    let phone = `0${phone_number}`
+                    if (phone_number > 08000000000){
+                        let network = +prompt(`Select Network Provider
+                        1. Airtel
+                        2. MTN
+                        3. 9mobile
+                        4. Glo `)
+                            if (network == "1" || network == "2" || network == "3" ||network == "4"  ){
+                               let proceed = prompt(`.
+                                press 1 to proceed`)
+                                    if (proceed = "1"){
+                                        let Myself = +prompt ("Input desired amount.")
+                                                if (Myself <= 0){
+                                                    let Myself0 = +prompt(`The amount inputed is less than N1. Try again
+                                                     Input desired amount.`)
+                                                    if (Myself0 <= 0){
+                                                        let Myself1 = +prompt(`The amount inputed is less than N1. Try again
+                                                        Input desired amount.`)
+                                                            if (Myself1 <= 0){alert("Time out")
+                                                                }
+                                                    else if (Myself1 > 0){
+                                                    alert(`You have successfully recharged N${Myself1} worth of airtime for ${phone}. Thank you`)
+                                                    }
+                                                    }
+                                                else if (Myself0 > 0){
+                                                 alert(`You have successfully recharged N${Myself0} worth of airtime for ${phone}. Thank you`)
+                                                }
+                                                }
+                                                else if (Myself <100001){alert(`You have sucessfully recharged N${Myself} worth of airtime for ${phone}. Thank you.`)}
+                    
+                                                else if (Myself > 100000) {let Myself3 = +prompt(`The amount inputed is more than N100,000. Try again
+                                                    Input desired amount.`)
+                                                        if (Myself3 > 100000) {let Myself4 = +prompt(`The amount inputed is more than N100,000. Try again
+                                                        Input desired amount.`)
+                                                            if (Myself4 > 100000){alert("Time out")
+                                                            }
+                                                        else if(Myself4 < 100001){
+                                                        alert(`You have successfully recharged N${Myself4} worth of airtime for ${phone}. Thank you`)
+                                                        }
+                                                        }
+                                                        else if(Myself3 < 100001){
+                                                        alert(`You have successfully recharged N${Myself3} worth of airtime for ${phone}. Thank you`)
+                                                        }
+                                                }       
+                                    }
+                            }
+                    }
+                    else if( phone_number > 09199999999){
+                    let phone_number =  +prompt(`The phone number does not exist. Input a valid Phone Number.
+                                .
+                                Enter Recepients Phone Number`)
+                                let phone = `0${phone_number}`
+                                if (phone_number > 08000000000){
+                                let network = +prompt(`Select Network Provider
+                                1. Airtel
+                                2. MTN
+                                3. 9mobile
+                                4. Glo `)
+                                    if (network == "1" || network == "2" || network == "3" ||network == "4"  ){
+                                         let proceed = prompt(`.
+                                        press 1 to proceed`)
+                                             if (proceed = "1"){
+                                                let Myself = +prompt ("Input desired amount.")
+                                                     if (Myself <= 0){
+                                                          let Myself0 = +prompt(`The amount inputed is less than N1. Try again
+                                                             Input desired amount.`)
+                                                            if (Myself0 <= 0){
+                                                                 let Myself1 = +prompt(`The amount inputed is less than N1. Try again
+                                                                     Input desired amount.`)
+                                                                if (Myself1 <= 0){alert("Time out")
+                                                                }
+                                                                else if (Myself1 > 0){
+                                                                    alert(`You have successfully recharged N${Myself1} worth of airtime for ${phone}. Thank you`)
+                                                                }
+                                                            }
+                                                            else if (Myself0 > 0){
+                                                                 alert(`You have successfully recharged N${Myself0} worth of airtime for ${phone}. Thank you`)
+                                                            }
+                                                    }
+                                                    else if (Myself <100001){alert(`You have sucessfully recharged N${Myself} worth of airtime for ${phone}. Thank you.`)}
+                    
+                                                    else if (Myself > 100000) {let Myself3 = +prompt(`The amount inputed is more than N100,000. Try again
+                                                        Input desired amount.`)
+                                                                if (Myself3 > 100000) {let Myself4 = +prompt(`The amount inputed is more than N100,000. Try again
+                                                                    Input desired amount.`)
+                                                                    if (Myself4 > 100000){alert("Time out")
+                                                                    }
+                                                                    else if(Myself4 < 100001){
+                                                                    alert(`You have successfully recharged N${Myself4} worth of airtime for ${phone}. Thank you`)
+                                                                    }
+                                                                }
+                                                                else if(Myself3 < 100001){
+                                                                    alert(`You have successfully recharged N${Myself3} worth of airtime for ${phone}. Thank you`)
+                                                                }
+                                                    }       
+                                            }
+                                    }
+                                }
+                                else if( phone_number > 09199999999){
+                                alert(`Time Out`)
+                                }
+                                else if(phone_number < 08000000000){
+                                alert(`Time Out`)
+                                }
+                    }
+                    else if(phone_number < 08000000000){
+                    let phone_number = +prompt(`The Phone Number does not exist. Input a valid Phone Number.
+                        .
+                                Enter Recepients Phone Number`)
+                                let phone = `0${phone_number}`
+                                if (phone_number > 08000000000){
+                                let network = +prompt(`Select Network Provider
+                                1. Airtel
+                                2. MTN
+                                3. 9mobile
+                                4. Glo `)
+                                    if (network == "1" || network == "2" || network == "3" ||network == "4"  ){
+                                         let proceed = prompt(`.
+                                        press 1 to proceed`)
+                                             if (proceed = "1"){
+                                                let Myself = +prompt ("Input desired amount.")
+                                                     if (Myself <= 0){
+                                                          let Myself0 = +prompt(`The amount inputed is less than N1. Try again
+                                                             Input desired amount.`)
+                                                            if (Myself0 <= 0){
+                                                                 let Myself1 = +prompt(`The amount inputed is less than N1. Try again
+                                                                     Input desired amount.`)
+                                                                if (Myself1 <= 0){alert("Time out")
+                                                                }
+                                                                else if (Myself1 > 0){
+                                                                    alert(`You have successfully recharged N${Myself1} worth of airtime for ${phone}. Thank you`)
+                                                                }
+                                                            }
+                                                            else if (Myself0 > 0){
+                                                                 alert(`You have successfully recharged N${Myself0} worth of airtime for ${phone}. Thank you`)
+                                                            }
+                                                    }
+                                                    else if (Myself <100001){alert(`You have sucessfully recharged N${Myself} worth of airtime for ${phone}. Thank you.`)}
+                    
+                                                    else if (Myself > 100000) {let Myself3 = +prompt(`The amount inputed is more than N100,000. Try again
+                                                        Input desired amount.`)
+                                                                if (Myself3 > 100000) {let Myself4 = +prompt(`The amount inputed is more than N100,000. Try again
+                                                                    Input desired amount.`)
+                                                                    if (Myself4 > 100000){alert("Time out")
+                                                                    }
+                                                                    else if(Myself4 < 100001){
+                                                                    alert(`You have successfully recharged N${Myself4} worth of airtime for ${phone}. Thank you`)
+                                                                    }
+                                                                }
+                                                                else if(Myself3 < 100001){
+                                                                    alert(`You have successfully recharged N${Myself3} worth of airtime for ${phone}. Thank you`)
+                                                                }
+                                                    }       
+                                            }
+                                    }
+                                }
+                                else if( phone_number > 09199999999){
+                                alert(`Time Out`)
+                                }
+                                else if(phone_number < 08000000000){
+                                alert(`Time Out`)
+                                }
+                }
+
+                }
+             }
+            else if (menu2 == "2"){
+                let data = +prompt(`Select Recipient
+        1. for Myself
+        2. for Others`)
+                if (data = "1"){
+                 let network = +prompt(`select network provider.
+                    1. Airtel
+                    2. MTN
+                    3. 9mobile
+                    4. Glo`)
+                    if (network == "1" || network == "2" || network == "3" ||network == "4"  ){
+                    let data_me = +prompt(`Select your desired plan
+                        1. N5000/22GB/30 days
+                        2. N3000/11GB/30 days
+                        3. N1500/6GB/7 days
+                        4. N500/2.5GB/2 days`
+                        )
+                        if (data_me == "1" || data_me == "2" || data_me == "3" || data_me == "4"  ){
+                            alert("Transaction Successful. Thank you for Banking with us.")
+                        }
+                        else {alert("Time out")}
+                }
+            }
+                if (data = "2"){
+                    let phone_n = +prompt ("Input Recipient's Phone number")
+                    let phone_n1 = `0${phone_n}`
+                        if (phone_n > 08000000000){
+                            let network1 = +prompt(`select network provider.
+                    1. Airtel
+                    2. MTN
+                    3. 9mobile
+                    4. Glo`)
+                    if (network1 == "1" || network1 == "2" || network1 == "3" ||network1 == "4"  ){
+                    let data_me1 = +prompt(`Select your desired plan
+                        1. N5000/22GB/30 days
+                        2. N3000/11GB/30 days
+                        3. N1500/6GB/7 days
+                        4. N500/2.5GB/2 days`
+                        )
+                        if (data_me1 == "1" || data_me1 == "2" || data_me1 == "3" || data_me1 == "4"  ){
+                            alert("Transaction Successful. Thank you for Banking with us.")
+                        }
+                        else {alert("Time out")}
+                }
+                        }
+                        if (phone_n < 09199999999){
+                            let network2 = +prompt(`select network provider.
+                    1. Airtel
+                    2. MTN
+                    3. 9mobile
+                    4. Glo`)
+                    if (network2 == "1" || network2 == "2" || network2 == "3" ||network2 == "4"  ){
+                    let data_me2 = +prompt(`Select your desired plan
+                        1. N5000/22GB/30 days
+                        2. N3000/11GB/30 days
+                        3. N1500/6GB/7 days
+                        4. N500/2.5GB/2 days`
+                        )
+                        if (data_me2 == "1" || data_me2 == "2" || data_me2 == "3" || data_me2 == "4"  ){
+                            alert("Transaction Successful. Thank you for Banking with us.")
+                        }
+                        else {alert("Time out")}
+                }
+                        }
+                        else{
+                            alert("Invalid number. Time out")
+                        }
+                    }
+        }
+            else if (menu2 == "3"){
+                alert(`Your current account balance is N60,534. 00kb`)
+            }
+            else {
+                alert("Time out")
+            }
+    } 
+    else {prompt(
+        `Input USSD code (*324#)`
+    )
+    if (menu1 == "*324#"){
+         let menu2 =  +prompt( `..........................................WELCOME TO SLEEK BANK PLC................................... 
+        select the following options to continue:
+        1. Buy Airtime
+        2. Buy Data
+        3. My balance`)
+        // Airtime.
+            if (menu2 == "1"){
+                let airtime = +prompt(`Select Recipient
+        1. for Myself
+        2. for Others
+               ` )//for myself
+               if (airtime == "1"){
+                let Myself = +prompt ("Input desired amount.")
+                if (Myself <= 0){let Myself0 = +prompt(`The amount inputed is less than N1. Try again
+                    Input desired amount.`)
+                        if (Myself0 <= 0){let Myself1 = +prompt(`The amount inputed is less than N1. Try again
+                    Input desired amount.`)
+                             if (Myself1 <= 0){alert("Time out")
+                            }
+                        else if (Myself1 > 0){
+                            alert(`You have successfully recharged N${Myself1} worth of airtime. Thank you`)
+                        }
+                        }
+                        else if (Myself0 > 0){
+                            alert(`You have successfully recharged N${Myself0} worth of airtime. Thank you`)
+                        }
+                    }
+                else if (Myself <100001){alert(`You have sucessfully recharged N${Myself} worth of airtime. Thank you.`)}
+                    
+                    else if (Myself > 100000) {let Myself3 = +prompt(`The amount inputed is more than N100,000. Try again
+                        Input desired amount.`)
+                        if (Myself3 > 100000) {let Myself4 = +prompt(`The amount inputed is more than N100,000. Try again
+                        Input desired amount.`)
+                            if (Myself4 > 100000){alert("Time out")
+                            }
+                        else if(Myself4 < 100001){
+                            alert(`You have successfully recharged N${Myself4} worth of airtime. Thank you`)
+                        }
+                        }
+                        else if(Myself3 < 100001){
+                            alert(`You have successfully recharged N${Myself3} worth of airtime. Thank you`)
+                        }
+                    }       
+                }// for others
+                if (airtime == "2"){
+                    let phone_number = +prompt("Please input Recipients Number")
+                    let phone = `0${phone_number}`
+                    if (phone_number > 08000000000){
+                        let network = +prompt(`Select Network Provider
+                        1. Airtel
+                        2. MTN
+                        3. 9mobile
+                        4. Glo `)
+                            if (network == "1" || network == "2" || network == "3" ||network == "4"  ){
+                               let proceed = prompt(`.
+                                press 1 to proceed`)
+                                    if (proceed = "1"){
+                                        let Myself = +prompt ("Input desired amount.")
+                                                if (Myself <= 0){
+                                                    let Myself0 = +prompt(`The amount inputed is less than N1. Try again
+                                                     Input desired amount.`)
+                                                    if (Myself0 <= 0){
+                                                        let Myself1 = +prompt(`The amount inputed is less than N1. Try again
+                                                        Input desired amount.`)
+                                                            if (Myself1 <= 0){alert("Time out")
+                                                                }
+                                                    else if (Myself1 > 0){
+                                                    alert(`You have successfully recharged N${Myself1} worth of airtime for ${phone}. Thank you`)
+                                                    }
+                                                    }
+                                                else if (Myself0 > 0){
+                                                 alert(`You have successfully recharged N${Myself0} worth of airtime for ${phone}. Thank you`)
+                                                }
+                                                }
+                                                else if (Myself <100001){alert(`You have sucessfully recharged N${Myself} worth of airtime for ${phone}. Thank you.`)}
+                    
+                                                else if (Myself > 100000) {let Myself3 = +prompt(`The amount inputed is more than N100,000. Try again
+                                                    Input desired amount.`)
+                                                        if (Myself3 > 100000) {let Myself4 = +prompt(`The amount inputed is more than N100,000. Try again
+                                                        Input desired amount.`)
+                                                            if (Myself4 > 100000){alert("Time out")
+                                                            }
+                                                        else if(Myself4 < 100001){
+                                                        alert(`You have successfully recharged N${Myself4} worth of airtime for ${phone}. Thank you`)
+                                                        }
+                                                        }
+                                                        else if(Myself3 < 100001){
+                                                        alert(`You have successfully recharged N${Myself3} worth of airtime for ${phone}. Thank you`)
+                                                        }
+                                                }       
+                                    }
+                            }
+                    }
+                    else if( phone_number > 09199999999){
+                    let phone_number =  +prompt(`The phone number does not exist. Input a valid Phone Number.
+                                .
+                                Enter Recepients Phone Number`)
+                                let phone = `0${phone_number}`
+                                if (phone_number > 08000000000){
+                                let network = +prompt(`Select Network Provider
+                                1. Airtel
+                                2. MTN
+                                3. 9mobile
+                                4. Glo `)
+                                    if (network == "1" || network == "2" || network == "3" ||network == "4"  ){
+                                         let proceed = prompt(`.
+                                        press 1 to proceed`)
+                                             if (proceed = "1"){
+                                                let Myself = +prompt ("Input desired amount.")
+                                                     if (Myself <= 0){
+                                                          let Myself0 = +prompt(`The amount inputed is less than N1. Try again
+                                                             Input desired amount.`)
+                                                            if (Myself0 <= 0){
+                                                                 let Myself1 = +prompt(`The amount inputed is less than N1. Try again
+                                                                     Input desired amount.`)
+                                                                if (Myself1 <= 0){alert("Time out")
+                                                                }
+                                                                else if (Myself1 > 0){
+                                                                    alert(`You have successfully recharged N${Myself1} worth of airtime for ${phone}. Thank you`)
+                                                                }
+                                                            }
+                                                            else if (Myself0 > 0){
+                                                                 alert(`You have successfully recharged N${Myself0} worth of airtime for ${phone}. Thank you`)
+                                                            }
+                                                    }
+                                                    else if (Myself <100001){alert(`You have sucessfully recharged N${Myself} worth of airtime for ${phone}. Thank you.`)}
+                    
+                                                    else if (Myself > 100000) {let Myself3 = +prompt(`The amount inputed is more than N100,000. Try again
+                                                        Input desired amount.`)
+                                                                if (Myself3 > 100000) {let Myself4 = +prompt(`The amount inputed is more than N100,000. Try again
+                                                                    Input desired amount.`)
+                                                                    if (Myself4 > 100000){alert("Time out")
+                                                                    }
+                                                                    else if(Myself4 < 100001){
+                                                                    alert(`You have successfully recharged N${Myself4} worth of airtime for ${phone}. Thank you`)
+                                                                    }
+                                                                }
+                                                                else if(Myself3 < 100001){
+                                                                    alert(`You have successfully recharged N${Myself3} worth of airtime for ${phone}. Thank you`)
+                                                                }
+                                                    }       
+                                            }
+                                    }
+                                }
+                                else if( phone_number > 09199999999){
+                                alert(`Time Out`)
+                                }
+                                else if(phone_number < 08000000000){
+                                alert(`Time Out`)
+                                }
+                    }
+                    else if(phone_number < 08000000000){
+                    let phone_number = +prompt(`The Phone Number does not exist. Input a valid Phone Number.
+                        .
+                                Enter Recepients Phone Number`)
+                                let phone = `0${phone_number}`
+                                if (phone_number > 08000000000){
+                                let network = +prompt(`Select Network Provider
+                                1. Airtel
+                                2. MTN
+                                3. 9mobile
+                                4. Glo `)
+                                    if (network == "1" || network == "2" || network == "3" ||network == "4"  ){
+                                         let proceed = prompt(`.
+                                        press 1 to proceed`)
+                                             if (proceed = "1"){
+                                                let Myself = +prompt ("Input desired amount.")
+                                                     if (Myself <= 0){
+                                                          let Myself0 = +prompt(`The amount inputed is less than N1. Try again
+                                                             Input desired amount.`)
+                                                            if (Myself0 <= 0){
+                                                                 let Myself1 = +prompt(`The amount inputed is less than N1. Try again
+                                                                     Input desired amount.`)
+                                                                if (Myself1 <= 0){alert("Time out")
+                                                                }
+                                                                else if (Myself1 > 0){
+                                                                    alert(`You have successfully recharged N${Myself1} worth of airtime for ${phone}. Thank you`)
+                                                                }
+                                                            }
+                                                            else if (Myself0 > 0){
+                                                                 alert(`You have successfully recharged N${Myself0} worth of airtime for ${phone}. Thank you`)
+                                                            }
+                                                    }
+                                                    else if (Myself <100001){alert(`You have sucessfully recharged N${Myself} worth of airtime for ${phone}. Thank you.`)}
+                    
+                                                    else if (Myself > 100000) {let Myself3 = +prompt(`The amount inputed is more than N100,000. Try again
+                                                        Input desired amount.`)
+                                                                if (Myself3 > 100000) {let Myself4 = +prompt(`The amount inputed is more than N100,000. Try again
+                                                                    Input desired amount.`)
+                                                                    if (Myself4 > 100000){alert("Time out")
+                                                                    }
+                                                                    else if(Myself4 < 100001){
+                                                                    alert(`You have successfully recharged N${Myself4} worth of airtime for ${phone}. Thank you`)
+                                                                    }
+                                                                }
+                                                                else if(Myself3 < 100001){
+                                                                    alert(`You have successfully recharged N${Myself3} worth of airtime for ${phone}. Thank you`)
+                                                                }
+                                                    }       
+                                            }
+                                    }
+                                }
+                                else if( phone_number > 09199999999){
+                                alert(`Time Out`)
+                                }
+                                else if(phone_number < 08000000000){
+                                alert(`Time Out`)
+                                }
+                }
+
+                }
+             }
+            else if (menu2 == "2"){
+                let data = +prompt(`Select Recipient
+        1. for Myself
+        2. for Others`)
+                if (data = "1"){
+                 let network = +prompt(`select network provider.
+                    1. Airtel
+                    2. MTN
+                    3. 9mobile
+                    4. Glo`)
+                    if (network == "1" || network == "2" || network == "3" ||network == "4"  ){
+                    let data_me = +prompt(`Select your desired plan
+                        1. N5000/22GB/30 days
+                        2. N3000/11GB/30 days
+                        3. N1500/6GB/7 days
+                        4. N500/2.5GB/2 days`
+                        )
+                        if (data_me == "1" || data_me == "2" || data_me == "3" || data_me == "4"  ){
+                            alert("Transaction Successful. Thank you for Banking with us.")
+                        }
+                        else {alert("Time out")}
+                }
+            }
+                if (data = "2"){
+                    let phone_n = +prompt ("Input Recipient's Phone number")
+                    let phone_n1 = `0${phone_n}`
+                        if (phone_n > 08000000000){
+                            let network1 = +prompt(`select network provider.
+                    1. Airtel
+                    2. MTN
+                    3. 9mobile
+                    4. Glo`)
+                    if (network1 == "1" || network1 == "2" || network1 == "3" ||network1 == "4"  ){
+                    let data_me1 = +prompt(`Select your desired plan
+                        1. N5000/22GB/30 days
+                        2. N3000/11GB/30 days
+                        3. N1500/6GB/7 days
+                        4. N500/2.5GB/2 days`
+                        )
+                        if (data_me1 == "1" || data_me1 == "2" || data_me1 == "3" || data_me1 == "4"  ){
+                            alert("Transaction Successful. Thank you for Banking with us.")
+                        }
+                        else {alert("Time out")}
+                }
+                        }
+                        if (phone_n < 09199999999){
+                            let network2 = +prompt(`select network provider.
+                    1. Airtel
+                    2. MTN
+                    3. 9mobile
+                    4. Glo`)
+                    if (network2 == "1" || network2 == "2" || network2 == "3" ||network2 == "4"  ){
+                    let data_me2 = +prompt(`Select your desired plan
+                        1. N5000/22GB/30 days
+                        2. N3000/11GB/30 days
+                        3. N1500/6GB/7 days
+                        4. N500/2.5GB/2 days`
+                        )
+                        if (data_me2 == "1" || data_me2 == "2" || data_me2 == "3" || data_me2 == "4"  ){
+                            alert("Transaction Successful. Thank you for Banking with us.")
+                        }
+                        else {alert("Time out")}
+                }
+                        }
+                        else{
+                            alert("Invalid number. Time out")
+                        }
+                    }
+        }
+            else if (menu2 == "3"){
+                alert(`Your current account balance is N60,534. 00kb`)
+            }
+            else {
+                alert("Time out")
+            }
+    } 
+    else {prompt(
+        `Input USSD code (*324#)`
+    )
+    if (menu1 == "*324#"){
+         let menu2 =  +prompt( `..........................................WELCOME TO SLEEK BANK PLC................................... 
+        select the following options to continue:
+        1. Buy Airtime
+        2. Buy Data
+        3. My balance`)
+        // Airtime.
+            if (menu2 == "1"){
+                let airtime = +prompt(`Select Recipient
+        1. for Myself
+        2. for Others
+               ` )//for myself
+               if (airtime == "1"){
+                let Myself = +prompt ("Input desired amount.")
+                if (Myself <= 0){let Myself0 = +prompt(`The amount inputed is less than N1. Try again
+                    Input desired amount.`)
+                        if (Myself0 <= 0){let Myself1 = +prompt(`The amount inputed is less than N1. Try again
+                    Input desired amount.`)
+                             if (Myself1 <= 0){alert("Time out")
+                            }
+                        else if (Myself1 > 0){
+                            alert(`You have successfully recharged N${Myself1} worth of airtime. Thank you`)
+                        }
+                        }
+                        else if (Myself0 > 0){
+                            alert(`You have successfully recharged N${Myself0} worth of airtime. Thank you`)
+                        }
+                    }
+                else if (Myself <100001){alert(`You have sucessfully recharged N${Myself} worth of airtime. Thank you.`)}
+                    
+                    else if (Myself > 100000) {let Myself3 = +prompt(`The amount inputed is more than N100,000. Try again
+                        Input desired amount.`)
+                        if (Myself3 > 100000) {let Myself4 = +prompt(`The amount inputed is more than N100,000. Try again
+                        Input desired amount.`)
+                            if (Myself4 > 100000){alert("Time out")
+                            }
+                        else if(Myself4 < 100001){
+                            alert(`You have successfully recharged N${Myself4} worth of airtime. Thank you`)
+                        }
+                        }
+                        else if(Myself3 < 100001){
+                            alert(`You have successfully recharged N${Myself3} worth of airtime. Thank you`)
+                        }
+                    }       
+                }// for others
+                if (airtime == "2"){
+                    let phone_number = +prompt("Please input Recipients Number")
+                    let phone = `0${phone_number}`
+                    if (phone_number > 08000000000){
+                        let network = +prompt(`Select Network Provider
+                        1. Airtel
+                        2. MTN
+                        3. 9mobile
+                        4. Glo `)
+                            if (network == "1" || network == "2" || network == "3" ||network == "4"  ){
+                               let proceed = prompt(`.
+                                press 1 to proceed`)
+                                    if (proceed = "1"){
+                                        let Myself = +prompt ("Input desired amount.")
+                                                if (Myself <= 0){
+                                                    let Myself0 = +prompt(`The amount inputed is less than N1. Try again
+                                                     Input desired amount.`)
+                                                    if (Myself0 <= 0){
+                                                        let Myself1 = +prompt(`The amount inputed is less than N1. Try again
+                                                        Input desired amount.`)
+                                                            if (Myself1 <= 0){alert("Time out")
+                                                                }
+                                                    else if (Myself1 > 0){
+                                                    alert(`You have successfully recharged N${Myself1} worth of airtime for ${phone}. Thank you`)
+                                                    }
+                                                    }
+                                                else if (Myself0 > 0){
+                                                 alert(`You have successfully recharged N${Myself0} worth of airtime for ${phone}. Thank you`)
+                                                }
+                                                }
+                                                else if (Myself <100001){alert(`You have sucessfully recharged N${Myself} worth of airtime for ${phone}. Thank you.`)}
+                    
+                                                else if (Myself > 100000) {let Myself3 = +prompt(`The amount inputed is more than N100,000. Try again
+                                                    Input desired amount.`)
+                                                        if (Myself3 > 100000) {let Myself4 = +prompt(`The amount inputed is more than N100,000. Try again
+                                                        Input desired amount.`)
+                                                            if (Myself4 > 100000){alert("Time out")
+                                                            }
+                                                        else if(Myself4 < 100001){
+                                                        alert(`You have successfully recharged N${Myself4} worth of airtime for ${phone}. Thank you`)
+                                                        }
+                                                        }
+                                                        else if(Myself3 < 100001){
+                                                        alert(`You have successfully recharged N${Myself3} worth of airtime for ${phone}. Thank you`)
+                                                        }
+                                                }       
+                                    }
+                            }
+                    }
+                    else if( phone_number > 09199999999){
+                    let phone_number =  +prompt(`The phone number does not exist. Input a valid Phone Number.
+                                .
+                                Enter Recepients Phone Number`)
+                                let phone = `0${phone_number}`
+                                if (phone_number > 08000000000){
+                                let network = +prompt(`Select Network Provider
+                                1. Airtel
+                                2. MTN
+                                3. 9mobile
+                                4. Glo `)
+                                    if (network == "1" || network == "2" || network == "3" ||network == "4"  ){
+                                         let proceed = prompt(`.
+                                        press 1 to proceed`)
+                                             if (proceed = "1"){
+                                                let Myself = +prompt ("Input desired amount.")
+                                                     if (Myself <= 0){
+                                                          let Myself0 = +prompt(`The amount inputed is less than N1. Try again
+                                                             Input desired amount.`)
+                                                            if (Myself0 <= 0){
+                                                                 let Myself1 = +prompt(`The amount inputed is less than N1. Try again
+                                                                     Input desired amount.`)
+                                                                if (Myself1 <= 0){alert("Time out")
+                                                                }
+                                                                else if (Myself1 > 0){
+                                                                    alert(`You have successfully recharged N${Myself1} worth of airtime for ${phone}. Thank you`)
+                                                                }
+                                                            }
+                                                            else if (Myself0 > 0){
+                                                                 alert(`You have successfully recharged N${Myself0} worth of airtime for ${phone}. Thank you`)
+                                                            }
+                                                    }
+                                                    else if (Myself <100001){alert(`You have sucessfully recharged N${Myself} worth of airtime for ${phone}. Thank you.`)}
+                    
+                                                    else if (Myself > 100000) {let Myself3 = +prompt(`The amount inputed is more than N100,000. Try again
+                                                        Input desired amount.`)
+                                                                if (Myself3 > 100000) {let Myself4 = +prompt(`The amount inputed is more than N100,000. Try again
+                                                                    Input desired amount.`)
+                                                                    if (Myself4 > 100000){alert("Time out")
+                                                                    }
+                                                                    else if(Myself4 < 100001){
+                                                                    alert(`You have successfully recharged N${Myself4} worth of airtime for ${phone}. Thank you`)
+                                                                    }
+                                                                }
+                                                                else if(Myself3 < 100001){
+                                                                    alert(`You have successfully recharged N${Myself3} worth of airtime for ${phone}. Thank you`)
+                                                                }
+                                                    }       
+                                            }
+                                    }
+                                }
+                                else if( phone_number > 09199999999){
+                                alert(`Time Out`)
+                                }
+                                else if(phone_number < 08000000000){
+                                alert(`Time Out`)
+                                }
+                    }
+                    else if(phone_number < 08000000000){
+                    let phone_number = +prompt(`The Phone Number does not exist. Input a valid Phone Number.
+                        .
+                                Enter Recepients Phone Number`)
+                                let phone = `0${phone_number}`
+                                if (phone_number > 08000000000){
+                                let network = +prompt(`Select Network Provider
+                                1. Airtel
+                                2. MTN
+                                3. 9mobile
+                                4. Glo `)
+                                    if (network == "1" || network == "2" || network == "3" ||network == "4"  ){
+                                         let proceed = prompt(`.
+                                        press 1 to proceed`)
+                                             if (proceed = "1"){
+                                                let Myself = +prompt ("Input desired amount.")
+                                                     if (Myself <= 0){
+                                                          let Myself0 = +prompt(`The amount inputed is less than N1. Try again
+                                                             Input desired amount.`)
+                                                            if (Myself0 <= 0){
+                                                                 let Myself1 = +prompt(`The amount inputed is less than N1. Try again
+                                                                     Input desired amount.`)
+                                                                if (Myself1 <= 0){alert("Time out")
+                                                                }
+                                                                else if (Myself1 > 0){
+                                                                    alert(`You have successfully recharged N${Myself1} worth of airtime for ${phone}. Thank you`)
+                                                                }
+                                                            }
+                                                            else if (Myself0 > 0){
+                                                                 alert(`You have successfully recharged N${Myself0} worth of airtime for ${phone}. Thank you`)
+                                                            }
+                                                    }
+                                                    else if (Myself <100001){alert(`You have sucessfully recharged N${Myself} worth of airtime for ${phone}. Thank you.`)}
+                    
+                                                    else if (Myself > 100000) {let Myself3 = +prompt(`The amount inputed is more than N100,000. Try again
+                                                        Input desired amount.`)
+                                                                if (Myself3 > 100000) {let Myself4 = +prompt(`The amount inputed is more than N100,000. Try again
+                                                                    Input desired amount.`)
+                                                                    if (Myself4 > 100000){alert("Time out")
+                                                                    }
+                                                                    else if(Myself4 < 100001){
+                                                                    alert(`You have successfully recharged N${Myself4} worth of airtime for ${phone}. Thank you`)
+                                                                    }
+                                                                }
+                                                                else if(Myself3 < 100001){
+                                                                    alert(`You have successfully recharged N${Myself3} worth of airtime for ${phone}. Thank you`)
+                                                                }
+                                                    }       
+                                            }
+                                    }
+                                }
+                                else if( phone_number > 09199999999){
+                                alert(`Time Out`)
+                                }
+                                else if(phone_number < 08000000000){
+                                alert(`Time Out`)
+                                }
+                }
+
+                }
+             }
+            else if (menu2 == "2"){
+                let data = +prompt(`Select Recipient
+        1. for Myself
+        2. for Others`)
+                if (data = "1"){
+                 let network = +prompt(`select network provider.
+                    1. Airtel
+                    2. MTN
+                    3. 9mobile
+                    4. Glo`)
+                    if (network == "1" || network == "2" || network == "3" ||network == "4"  ){
+                    let data_me = +prompt(`Select your desired plan
+                        1. N5000/22GB/30 days
+                        2. N3000/11GB/30 days
+                        3. N1500/6GB/7 days
+                        4. N500/2.5GB/2 days`
+                        )
+                        if (data_me == "1" || data_me == "2" || data_me == "3" || data_me == "4"  ){
+                            alert("Transaction Successful. Thank you for Banking with us.")
+                        }
+                        else {alert("Time out")}
+                }
+            }
+                if (data = "2"){
+                    let phone_n = +prompt ("Input Recipient's Phone number")
+                    let phone_n1 = `0${phone_n}`
+                        if (phone_n > 08000000000){
+                            let network1 = +prompt(`select network provider.
+                    1. Airtel
+                    2. MTN
+                    3. 9mobile
+                    4. Glo`)
+                    if (network1 == "1" || network1 == "2" || network1 == "3" ||network1 == "4"  ){
+                    let data_me1 = +prompt(`Select your desired plan
+                        1. N5000/22GB/30 days
+                        2. N3000/11GB/30 days
+                        3. N1500/6GB/7 days
+                        4. N500/2.5GB/2 days`
+                        )
+                        if (data_me1 == "1" || data_me1 == "2" || data_me1 == "3" || data_me1 == "4"  ){
+                            alert("Transaction Successful. Thank you for Banking with us.")
+                        }
+                        else {alert("Time out")}
+                }
+                        }
+                        if (phone_n < 09199999999){
+                            let network2 = +prompt(`select network provider.
+                    1. Airtel
+                    2. MTN
+                    3. 9mobile
+                    4. Glo`)
+                    if (network2 == "1" || network2 == "2" || network2 == "3" ||network2 == "4"  ){
+                    let data_me2 = +prompt(`Select your desired plan
+                        1. N5000/22GB/30 days
+                        2. N3000/11GB/30 days
+                        3. N1500/6GB/7 days
+                        4. N500/2.5GB/2 days`
+                        )
+                        if (data_me2 == "1" || data_me2 == "2" || data_me2 == "3" || data_me2 == "4"  ){
+                            alert("Transaction Successful. Thank you for Banking with us.")
+                        }
+                        else {alert("Time out")}
+                }
+                        }
+                        else{
+                            alert("Invalid number. Time out")
+                        }
+                    }
+        }
+            else if (menu2 == "3"){
+                alert(`Your current account balance is N60,534. 00kb`)
+            }
+            else {
+                alert("Time out")
+            }
+    } 
+    else{alert("Operation Time out")} 
+    }
+    } 
+</script>
